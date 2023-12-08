@@ -1,15 +1,77 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>javaScript</title>
-</head>
-<body>
-    
-   
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/home.css" />
+    <title>Modal Popup</title>
+  </head>
 
-    <script src="./javascript7.js"></script>
+
+  <body>
+    <section class="modal hidden">
+
+      <div class="header">
+          <h1>Melumat merkezine zeng</h1>
+          <button class="btn-close">⨉</button>     <!------//----->
+      </div>
+
+      <p>Sizə uyğun əlaqə vasitəsini seçin</p>
+
+
+      <button class="form-btn call-open">
+          Birbasa zeng
+      </button>
+      <button class="form-btn online-open">
+          Online zeng
+      </button>
+      <button class="form-btn submit-open">        <!----------->
+          Zeng sifarisleri
+      </button>
+
+  </section>
+
+
+      
+
+      <section class="submit hidden">
+
+        <div class="header">
+            <h1>Zeng sifarisleri</h1>
+            <button class="submit-close">⨉</button>      <!----------->
+        </div>
+
+        <p>Xidmet vaxdi: Bazar ertesi - Cume, 10:00-18:00</p>
+
+        <form>
+            <input type="text" placeholder="Ad ve Soyad*">
+            <input type="number" placeholder="Telefon*">
+            <div class="form">
+                <input type="radio">
+                <label for="radio">Mumkun qeder tez</label>
+            </div>
+            <div class="form">
+                <input type="radio">
+                <label for="radio">Nahardan evvel</label>
+            </div>
+            <div class="form">
+                <input type="radio">
+                <label for="radio">Nahardan sonra</label>
+            </div>
+        </form>
+
+        <button class="form-btn">Zeng sifaris et</button>     <!----------->
+
+    </section>
+
     
-</body>
+    <div class="overlay hidden" ></div>
+    
+    
+    <button class="btn btn-open">143</button>
+
+    <script src="./JS Algoritma/main.js"></script>
+  </body>
 </html>
